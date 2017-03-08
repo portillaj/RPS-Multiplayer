@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rock, Paper, Scissors Game</title>
+	 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link rel="stylesheet" href="icons/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="header">Rock Paper Scissors Online</h1>
+		
+    <div>
+        <div class="my-input">
+             <span class="hide-me"><input type="text" class="name-input" id="name"/>
+           <button class="start-button" id="play-button">Start</button></span>
+        </div>
+    </div>
+		<div class="row game-area">
+			<div class="col-md-4 col-lg-4">
+				<div class="player1">
+					<h2 id="player1-name">Waiting for Player 1</h2>
+					<div class="selection">
+					<ul class="select-weapon">
+
+					</ul>
+				</div>
+				</div>
+	
+			</div>
+
+			<div class="col-md-4 col-lg-4">
+				<div class="results">
+				</div>
+			</div>
+
+			<div class="col-md-4 col-lg-4">
+				<div class="player2">
+					<h2 id="player2-name">Waiting for Player 2</h2>
+					<div class="selection">
+					<ul class="select-weapon2">
+
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="chat">
+			<textarea class="form-control" id="message-area" rows="3"></textarea>
+				 <div class="my-chat">
+             		<span><input type="text" class="message-input"/>
+          	 		<button class="submit-message">Submit</button></span>
+        		</div>
+		</div>
+	</div>
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+body {
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Shadows Into Light', cursive;
+	text-align: center;
+}
+
+.header {
+	font-size: 46px;
+	color: white;
+	border-width: 0 0 5px;
+ 	border-style: solid;
+	border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill;
+	display: inline-block;
+
+}
+
+.my-input {
+	display: block;
+	height: 100px;
+	width: 50%;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.name-input {
+
+	height: 40px;
+	border-radius: 4px;
+	width: 200px;
+}
+
+
+
+.start-button {
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+	margin-left: 5px;
+	border-radius: 4px;
+	width: 80px;
+	background-color: #44C26D;
+	color: white;
+	font-size: 22px;
+
+}
+
+.game-area {
+	clear: both;
+}
+
+.player1, .player2, .results {
+	border-radius: 5px;
+	margin-top: 20px;
+	height: 290px;
+	width: 320px;
+	border: 5px solid white;
+}
+
+#player1-name, #player2-name {
+	color: #E9AA28;
+}
+
+.select-weapon, .select-weapon2 {
+	list-style-type: none;
+	margin-right: 40px;
+}
+
+.my-choices, .my-choices2 {
+	color: white;
+	font-size: 28px;
+	background-color: #E9AA28; 
+	padding: 5px;
+	margin-top: 7px;
+}
+
+.my-choices:hover, .my-choices2:hover {
+	border-radius: 7px;
+	background-color: white;
+	color: #E9AA28;
+	transition-duration: .4s;
+}
+
+.rock-icon-left, .paper-icon-left, .scissors-icon-left {
+	
+	margin-right: 15px;
+}
+
+.rock-icon-right, .paper-icon-right, .scissors-icon-right {
+	
+	margin-left: 15px;
+}
+
+
+.greeting {
+	color: white;
+}
+
+.wins {
+	float: left;
+	margin-left: 35px;
+}
+
+.wins, .losses, .ties {
+	margin-right: 30px;
+	display: inline-block;
+	font-size: 20px;
+	color:white;
+}
+
+#chat {
+	margin-top: 60px;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#message-area {
+	height: 220px;
+}
+
+.my-chat {
+	margin-top: 10px;
+}
+.message-input {
+	margin-left: 10px;
+	border-radius: 5px;
+	width: 70%;
+	height: 40px;
+	margin-bottom: 40px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.submit-message {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 7px;
+	font-size: 24px;
+	color: #E9AA28;
+	font-weight: bold;
+	background-color: #237D9F;
+}
+
+
+
+
