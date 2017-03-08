@@ -293,7 +293,6 @@ $(".submit-message").on("click", function(){
   var isConnected = database.ref(".info/connected");
   isConnected.on("value", function(childSnapshot) {
   	if(childSnapshot.val()){
-  		alert("Player 1 connected");
   		var connect = connections.push(true);
   		connect.onDisconnect().remove();
   	}
@@ -304,28 +303,6 @@ $(".submit-message").on("click", function(){
  	 console.log(snap.numChildren());
  	 
   });
-
-
- database.ref("/chat").on("child_added", function(snapshot) {
-	var chatMsg = snapshot.val();
-	var chatEntry = $("<div>").html(chatMsg);
-
-	// Change the color of the chat message depending on user or connect/disconnect event
-	if(chatMsg.includes("disconnected")) {
-		chatEntry.addClass("chatColorDisconnected");
-	} else if (chatMsg.includes("joined")) {
-		chatEntry.addClass("chatColorJoined");
-	} else if (chatMsg.startsWith(playerName)) {
-		chatEntry.addClass("chatColor1");
-	} else {
-		chatEntry.addClass("chatColor2");
-	}
-
-	$("#message-area").append(chatEntry);
-	$("#message-area").scrollTop($("#message-area")[0].scrollHeight);
-});
-
-
 
 
 
